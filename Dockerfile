@@ -8,7 +8,7 @@ WORKDIR /app
 # Add source code
 ADD . /app/
 
-# Build the source
+# Build the sources
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main app.go
 
 
